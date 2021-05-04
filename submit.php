@@ -12,14 +12,18 @@
     $firstname = filter_input(INPUT_POST, 'firstname');
     $lastname = filter_input(INPUT_POST, 'lastname');
     $gender = filter_input(INPUT_POST, 'gender');
-    echo "You filled in the firstname: $firstname";
+    $email = filter_input(INPUT_POST, 'email');
+    $question = filter_input(INPUT_POST, 'question');
+    $answer = filter_input(INPUT_POST, 'answer');
+    echo "Your firstname is: $firstname";
     echo "</br>";
     echo "Your lastname is: $lastname";
     echo "</br>";
     echo "Your gender is $gender";
- 
-
-
+    echo "</br>";
+    echo "Your email adress is $email";
+    echo "</br>";
+    echo "Your security question is '$question' with answer '$answer'";
 
     ?>
 </body>
